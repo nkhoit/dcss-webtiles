@@ -50,9 +50,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: |
-      github.event_name != 'schedule' ||
-      needs.check-release.outputs.should_build == 'true'
-    needs: [check-release]
+      always() &&
+      (github.event_name != 'schedule' ||
+       needs.check-release.outputs.should_build == 'true')
     permissions:
       contents: read
       packages: write
