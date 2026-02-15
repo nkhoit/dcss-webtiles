@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libncursesw5-dev libsqlite3-dev libz-dev pkg-config \
     binutils-gold libsdl2-image-dev libsdl2-mixer-dev libsdl2-dev \
     libfreetype-dev libpng-dev fonts-dejavu-core advancecomp pngcrush \
-    ca-certificates \
+    ca-certificates python3-yaml \
   && rm -rf /var/lib/apt/lists/*
 
 RUN git clone --branch ${CRAWL_VERSION} --depth 1 ${CRAWL_REPO} /src \
