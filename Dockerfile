@@ -45,6 +45,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ncurses-term locales-all sqlite3 libpcre3 locales \
     liblua5.1-0 lsof \
   && pip3 install --break-system-packages tornado \
+  && ln -s /usr/bin/python3 /usr/bin/python \
   && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /build/ /app/
