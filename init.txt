@@ -1,0 +1,6 @@
+##### Crawl Init file ###############################################
+# For descriptions of all options, as well as some more in-depth information
+# on setting them, consult the file
+#    options_guide.txt
+# in your /docs directory, or online at:
+# https://github.com/crawl/crawl/blob/master/crawl-ref/docs/options_guide.txt

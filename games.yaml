@@ -1,0 +1,46 @@
+games:
+  - id: seeded-web
+    name: Custom seed
+    crawl_binary: /app/bin/crawl
+    rcfile_path: /data/rcs/
+    macro_path: /data/rcs/
+    morgue_path: /data/rcs/%n
+    inprogress_path: /data/rcs/running
+    ttyrec_path: /data/rcs/ttyrecs/%n
+    socket_path: /data/rcs
+    client_path: /app/webserver/game_data/
+    morgue_url: None
+    show_save_info: True
+    send_json_options: True
+    options:
+      - -seed
+  - id: tut-web
+    name: Tutorial
+    crawl_binary: /app/bin/crawl
+    rcfile_path: /data/rcs/
+    macro_path: /data/rcs/
+    morgue_path: /data/rcs/%n
+    inprogress_path: /data/rcs/running
+    ttyrec_path: /data/rcs/ttyrecs/%n
+    socket_path: /data/rcs
+    client_path: /app/webserver/game_data/
+    morgue_url: None
+    show_save_info: True
+    send_json_options: True
+    options:
+      - -tutorial
+  - id: sprint-web
+    name: Sprint
+    crawl_binary: /app/bin/crawl
+    rcfile_path: /data/rcs/
+    macro_path: /data/rcs/
+    morgue_path: /data/rcs/%n
+    inprogress_path: /data/rcs/running
+    ttyrec_path: /data/rcs/ttyrecs/%n
+    socket_path: /data/rcs
+    client_path: /app/webserver/game_data/
+    morgue_url: None
+    show_save_info: True
+    send_json_options: True
+    options:
+      - -sprint
