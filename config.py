@@ -3,6 +3,8 @@ from collections import OrderedDict
 
 dgl_mode = True
 
+server_id = ""
+
 bind_nonsecure = True
 bind_address = ""
 bind_port = 8080
